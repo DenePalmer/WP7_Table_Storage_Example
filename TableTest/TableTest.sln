@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "TableTest", "TableTest\TableTest.ccproj", "{E79E0786-D13B-4626-AB1A-3FC9F455CC0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFServiceWebRole1", "WCFServiceWebRole1\WCFServiceWebRole1.csproj", "{ECC2F602-D835-4E03-A643-5EC4BA6757FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E79E0786-D13B-4626-AB1A-3FC9F455CC0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E79E0786-D13B-4626-AB1A-3FC9F455CC0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E79E0786-D13B-4626-AB1A-3FC9F455CC0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E79E0786-D13B-4626-AB1A-3FC9F455CC0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC2F602-D835-4E03-A643-5EC4BA6757FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECC2F602-D835-4E03-A643-5EC4BA6757FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECC2F602-D835-4E03-A643-5EC4BA6757FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECC2F602-D835-4E03-A643-5EC4BA6757FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

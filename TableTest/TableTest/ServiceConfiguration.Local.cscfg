@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="TableTest" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="WCFServiceWebRole1">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Azure" value="DefaultEndpointsProtocol=https;AccountName=denesad;AccountKey=skZE52aQ5LccETOj2f2GDphoUz8UN5pALZ+WyCXe533/e2fmnvxTbOfr/8Ugd2Izjs4YHvtZpEC9M2n84fiuQA==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

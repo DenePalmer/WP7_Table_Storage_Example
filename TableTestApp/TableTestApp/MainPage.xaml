@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TableTestApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="768"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="PageTitle" Text="Favourite CD" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Button Content="Add CD" Height="84" HorizontalAlignment="Left" Margin="96,360,0,0" Name="button1" VerticalAlignment="Top" Width="242" Click="button1_Click" />
+            <TextBlock Height="63" HorizontalAlignment="Left" Margin="18,436,0,0" Name="textBlock1" Text="Enter your name below to view or delete your favourite CD:" VerticalAlignment="Top" Width="441" TextWrapping="Wrap" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="70,484,0,0" Name="returnedCD" Text="" VerticalAlignment="Top" Width="302" />
+            <Button Content="View CD" Height="72" HorizontalAlignment="Left" Margin="231,562,0,0" Name="button2" VerticalAlignment="Top" Width="228" Click="button2_Click" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="96,69,0,0" Name="name" Text="" VerticalAlignment="Top" Width="344" />
+            <TextBox Height="72" HorizontalAlignment="Right" Margin="0,147,16,0" Name="artist" Text="" VerticalAlignment="Top" Width="344" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="96,225,0,0" Name="title" Text="" VerticalAlignment="Top" Width="344" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="96,298,0,0" Name="year" Text="" VerticalAlignment="Top" Width="344" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="18,93,0,0" Name="textBlock2" Text="Name" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="18,166,0,0" Name="textBlock3" Text="Artist" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="18,246,0,0" Name="textBlock4" Text="Title" VerticalAlignment="Top" />
+            <TextBlock Height="30" HorizontalAlignment="Left" Margin="18,318,0,0" Name="textBlock5" Text="Year" VerticalAlignment="Top" />
+            <TextBlock Height="57" HorizontalAlignment="Left" Margin="34,6,0,0" Name="textBlock6" Text="Please enter your name and the details of your favourite CD below:" VerticalAlignment="Top" Width="380" TextWrapping="Wrap" />
+            <Button Content="Delete CD" Height="72" HorizontalAlignment="Right" Margin="0,562,232,0" Name="button3" VerticalAlignment="Top" Width="224" Click="button3_Click" />
+        </Grid>
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="Button 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

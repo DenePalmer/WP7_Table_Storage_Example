@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://127.0.0.1:81/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" />
+  <xs:element name="addCD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rowkey" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="artist" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="year" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="addCDResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rowkey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" minOccurs="0" name="getCDResult" nillable="true" type="q1:CDS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteCD">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="rowkey" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deleteCDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" minOccurs="0" name="deleteCDResult" nillable="true" type="q2:CDS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
