@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Phone.Identity.AccessControl.BasePage</id>
+    <version>1.0.2</version>
+    <title>Access Control Service for Windows Phone (with a base log in page)</title>
+    <authors>Microsoft DPE</authors>
+    <owners>Microsoft DPE</owners>
+    <licenseUrl>http://www.opensource.org/licenses/ms-pl</licenseUrl>
+    <projectUrl>http://watwp.codeplex.com/</projectUrl>
+    <iconUrl>http://wazmobiletoolkit.blob.core.windows.net/nuget/logos/WinAzure_rgb.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Base log in page for Windows Phone that uses the Access Control Service Log In control.</description>
+    <summary>Base log in page for Windows Phone that uses the Access Control Service Log In control.</summary>
+    <tags>WindowsPhone ACS DPE</tags>
+    <dependencies>
+      <dependency id="Phone.Identity.AccessControl" version="1.0.1" />
+    </dependencies>
+    <references />
+  </metadata>
+</package>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://assignment2service.cloudapp.net/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:import schemaLocation="http://assignment2service.cloudapp.net/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" />
+  <xs:complexType name="ArrayOfcd_info">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="cd_info" nillable="true" type="tns:cd_info" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfcd_info" nillable="true" type="tns:ArrayOfcd_info" />
+  <xs:complexType name="cd_info">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/System.Data.Objects.DataClasses" base="q1:EntityObject">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="ID" type="xs:int" />
+          <xs:element minOccurs="0" name="artist" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="guid" nillable="true" type="ser:guid" />
+          <xs:element minOccurs="0" name="title" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="year" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="cd_info" nillable="true" type="tns:cd_info" />
+</xs:schema>
